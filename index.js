@@ -1,21 +1,18 @@
-const express = require("express");
-const path = require("path");
+const express = require("express")
+const path = require('path');
 
-const app = express();
+const app = express()
 
 app.use(express.static("public"));
+app.set("view engine", "ejs")
 
-app.set("view engine", "ejs");
-
-app.get("/", function (req, res) {
-  res.render("pages/index");
-  // res.sendFile(path.join(__dirname, "/pages/index.html"));
+app.get("/", function(req, res) {
+    res.render("pages/index")
 });
 
-app.get("/about", function (req, res) {
-  res.render("pages/about");
-  // res.sendFile(path.join(__dirname, "/pages/about.html"));
+app.get("/about", function(req, res) {
+    res.render("pages/about")
 });
 
 app.listen(3000);
-console.log("Server is running");
+console.log("Server is running")

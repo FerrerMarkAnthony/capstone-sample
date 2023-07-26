@@ -1,11 +1,12 @@
 {
-  "name": "capstone-project-codemnl",
+  "name": "capstone-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devcss": "postcss public/assets/styles/global.css -o public/assets/styles/style.css -w"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,6 @@
     "nodemon": "^3.0.1",
     "postcss": "^8.4.27",
     "postcss-cli": "^10.1.0",
-    "tailwind": "^4.0.0"
+    "tailwindcss": "^3.3.3"
   }
 }
