@@ -18,5 +18,17 @@ app.get("/about", function (req, res) {
   res.render("pages/about");
 });
 
+app.get("/login", function (req, res) {
+  res.render("pages/login", {
+    layout: "./layouts/authentication",
+  });
+});
+
+app.get("/registration", function (req, res) {
+  res.render("pages/registration", {
+    layout: "./layouts/authentication",
+  });
+});
+
 app.listen(3000);
 console.log("Server is running");

@@ -1,0 +1,14 @@
+<% buttonVariant = typeof buttonVariant !== 'undefined' ? buttonVariant:
+'primary'; buttonText = buttonText; linkText = linkText; %>
+
+<!-- Button -->
+<div class="mt-10 flex items-center justify-center gap-x-6">
+  <%- include('../atom/Button', { buttonText, buttonVariant}); %>
+
+  <!-- Links -->
+  <%- include('../atom/Link', {linkText}); %>
+</div>
+
+<!-- Primary button -->
+
+<!-- Secondary button -->
